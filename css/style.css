@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Clicker+Script&family=Inter:wght@400;600&family=Poppins:ital,wght@0,200;0,300;0,400;0,600;1,500&display=swap');
+
 :root
 {
     --bg-black-900: #f2f2fc;
@@ -8,11 +10,10 @@
 }
 body
 {
-    margin: 0;
-    padding: 0;
     width: 100%;
     line-height: 1.5;
     font-size: 16px;
+    font-family: 'poppins', sans-serif;
 }
 *
 {
@@ -40,6 +41,7 @@ header
     position: fixed;
     left: 0;
     top: 0;
+    border-bottom: 1px solid var(--bg-black-50);
     z-index: 10;
 }
 header div
@@ -48,15 +50,38 @@ header div
     align-items: center;
     
 }
-header .center-top
-{
-    text-align: center;
-}
 header .top
 {
     display: flex;
     justify-content: center;
     margin: 20px;
+}
+header .center-top
+{
+    text-align: center;
+    margin: 0;
+}
+header .top .center-top .name-store
+{
+    width: 200px;
+}
+header .top .center-top .name-store span
+{
+    width: 200px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-black-900);
+    border-bottom: 2px solid var(--text-black-900);
+    border-radius: 2px;
+    margin-bottom: 5px;
+}
+header .top .center-top .text
+{
+    color: var(--text-black-900);
+    font-family: 'bebas', serif;
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 0;
 }
 header ul
 {
@@ -72,4 +97,42 @@ header ul li
     margin: 10px;
     
 }
+header .logo a
+{
+    color: var(--text-black-900);
+    font-weight: 700;
+    font-size: 30px;
+}
+header .logo a span
+{
+    font-size: 40px;
+    color: var(--skin-color);
+}
+header .logo a
+{
+    border-top: 5px solid var(--skin-color);
+    border-bottom: 5px solid var(--skin-color);
+    border-radius: 3px;
+}
+header li a
+{
+    color: var(--text-black-900);
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    border-bottom: 1px solid var(--bg-black-50);
+}
+header li a.active
+{
+    color: var(--skin-color);
+}
+header li a i
+{
+    margin-right: 3px;
+    font-size: 18px;
+}
 /* Home */
+.home .home-img img
+{
+    height: 400px;
+}
